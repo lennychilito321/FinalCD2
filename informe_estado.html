@@ -1,0 +1,113 @@
+<title>Estado Auditoría UniDoc</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+/* Diseño: informe de estado sobrio, una columna, tablas con estado en pastillas */
+:root{--bg:#f6f7f9;--fg:#1c2330;--muted:#5d6676;--line:#dde1e8;--card:#ffffff;--accent:#1f4e8c;--ok:#1d7a46;--okbg:#e2f4e9;--warn:#9a6200;--warnbg:#fdf0d5;--bad:#b3261e;--badbg:#fbe4e2;
+--head:"Space Grotesk",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12161d;--fg:#e6e9ef;--muted:#99a3b3;--line:#2a313d;--card:#1a2029;--accent:#7fb0ee;--ok:#6fd49a;--okbg:#17342a;--warn:#f0c067;--warnbg:#3a2f14;--bad:#ff9a92;--badbg:#3d1d1b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12161d;--fg:#e6e9ef;--muted:#99a3b3;--line:#2a313d;--card:#1a2029;--accent:#7fb0ee;--ok:#6fd49a;--okbg:#17342a;--warn:#f0c067;--warnbg:#3a2f14;--bad:#ff9a92;--badbg:#3d1d1b;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55;padding-block:32px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2{font-family:var(--head);text-wrap:balance;margin:0}
+h1{font-size:30px;line-height:1.15}
+h2{font-size:20px;margin-bottom:10px}
+p{margin:0 0 8px;max-width:68ch}
+.sub{color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 20px;color:var(--muted);font-size:13px;margin-top:8px}
+section{display:block}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap}
+.ok{background:var(--okbg);color:var(--ok)}.warn{background:var(--warnbg);color:var(--warn)}.bad{background:var(--badbg);color:var(--bad)}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+li{max-width:70ch}
+.note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:12px 14px}
+.quote{white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:14px}
+code{font-size:13px}
+</style>
+
+<main>
+<header>
+<h1>Estado de la auditoría de calidad de UniDoc</h1>
+<p class="sub">Calidad de Software II · Trabajo final · entrega 17 de noviembre de 2026</p>
+<div class="meta"><span>Aplicación: UniDoc (plataforma Nova)</span><span>Roles: Docencia y Aspirante</span><span>Corte: 16 de noviembre de 2026</span></div>
+</header>
+
+<section>
+<h2>Resumen</h2>
+<p>El informe de funcionales del rol Aspirante está avanzado: hay 15 casos diseñados y 10 automatizados con Cypress que pasan. Los informes de rendimiento y vulnerabilidades no pueden ejecutarse todavía, porque falta la autorización del docente. El rol Docencia está bloqueado porque ninguna de nuestras cuentas lo tiene asignado.</p>
+<p>Todo lo que falta depende de una respuesta del docente Jefferson Muñoz.</p>
+</section>
+
+<section>
+<h2>Estado por informe</h2>
+<div class="tw"><table>
+<tr><th>Informe</th><th>Estado</th><th>Qué se puede hacer hoy</th><th>Qué lo bloquea</th></tr>
+<tr><td>1. Funcionales (Cypress)</td><td><span class="pill warn">Parcial</span></td><td>Redactar el informe del rol Aspirante con la evidencia ya generada.</td><td>Rol Docencia sin cuenta; permiso para el caso FUN-15.</td></tr>
+<tr><td>2. Rendimiento</td><td><span class="pill bad">Sin ejecutar</span></td><td>Diseñar escenarios y escribir scripts de JMeter o Vegeta.</td><td>Ventana de ejecución y límites de carga del docente.</td></tr>
+<tr><td>3. Vulnerabilidades</td><td><span class="pill bad">Sin ejecutar</span></td><td>Preparar la configuración del escaneo y la estructura del informe.</td><td>Autorización escrita del docente; OpenVAS requiere Linux o Docker.</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2>Pruebas funcionales: requisitos del enunciado</h2>
+<div class="tw"><table>
+<tr><th>Requisito</th><th>Estado</th><th>Detalle</th></tr>
+<tr><td>12 casos diseñados</td><td><span class="pill ok">Cumple</span></td><td>15 casos (FUN-01 a FUN-16, con FUN-15 omitido).</td></tr>
+<tr><td>Al menos 8 automatizados</td><td><span class="pill ok">Cumple</span></td><td>10 pasan en la última corrida (4 de login, 6 de Aspirante).</td></tr>
+<tr><td>Al menos 3 negativos</td><td><span class="pill warn">Falta 1</span></td><td>Hay 2 activos (clave incorrecta y campos vacíos). El tercero es FUN-15 y está omitido.</td></tr>
+<tr><td>Al menos 2 de permisos</td><td><span class="pill warn">Débil</span></td><td>FUN-04 es válido. FUN-16 acepta un 404 y no prueba permisos de verdad.</td></tr>
+<tr><td>Rol Docencia</td><td><span class="pill bad">Sin cubrir</span></td><td>Los 5 casos de Docencia son esqueletos y no se ejecutaron.</td></tr>
+</table></div>
+<p class="sub" style="margin-top:8px">Evidencia disponible en el proyecto: videos en <code>cypress/videos</code> y capturas en <code>cypress/screenshots</code>.</p>
+</section>
+
+<section>
+<h2>Lo que descubrimos del sistema</h2>
+<ul>
+<li>Nova reúne tres aplicaciones: Planes de aula, UniDoc y Tickets. UniDoc es la de convocatorias y hojas de vida.</li>
+<li>Nova y UniDoc tienen logins y sesiones separados. Entrar a uno no abre el otro.</li>
+<li>Con una cuenta de Google se puede entrar manualmente, pero Cypress no puede automatizar el login de Google. Para las pruebas automáticas hace falta una cuenta con correo y contraseña.</li>
+<li>La cuenta de Luis, al entrar a Nova, aparece como docente de Planes de aula. Al entrar a UniDoc aparece como Aspirante. Ninguna de las dos tiene el rol Docencia de UniDoc.</li>
+<li>Mensajes reales del login de UniDoc: "Credenciales incorrectas" (clave inválida), y "Correo no valido" y "Contraseña muy corta" (campos vacíos).</li>
+</ul>
+</section>
+
+<section>
+<h2>Pendientes y responsables sugeridos</h2>
+<div class="tw"><table>
+<tr><th>Pendiente</th><th>Responsable sugerido</th></tr>
+<tr><td>Enviar el mensaje al docente (ver abajo)</td><td>Quien lo escriba hoy</td></tr>
+<tr><td>Obtener cuenta de Docencia con correo y contraseña</td><td>Luis Ramos, con el docente</td></tr>
+<tr><td>Conseguir una URL real de otro rol para el caso de permisos</td><td>Cualquiera, mirando el menú de Nova</td></tr>
+<tr><td>Redactar el informe de funcionales del rol Aspirante</td><td>Lenny Chilito</td></tr>
+<tr><td>Decidir JMeter o Vegeta y preparar los scripts</td><td>Calet Ibarra</td></tr>
+<tr><td>Preparar Docker o Linux para OpenVAS</td><td>Miguel Llantén</td></tr>
+<tr><td>Crear el repositorio Git y hacer commits de cada integrante</td><td>Todos</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2>Mensaje sugerido para el docente</h2>
+<div class="quote">Profe, buenos días. Para el trabajo final de Calidad de Software II, queremos confirmar:
+1. ¿Nos asignó UniDoc con los roles Docencia y Aspirante?
+2. En UniDoc nuestras cuentas aparecen solo como Aspirante. ¿Puede asignar el rol Docencia a luis.ramos.sanjuan@uniautonoma.edu.co o darnos una cuenta de prueba con correo y contraseña?
+3. ¿Cuál es la ventana de ejecución y cuáles son los límites máximos de carga para rendimiento?
+4. ¿Autoriza el escaneo con OpenVAS sobre nova.uniautonoma.edu.co? ¿En qué ventana?
+5. ¿Podemos probar la postulación con perfil incompleto (puede crear una postulación real)?
+Gracias.</div>
+</section>
+
+<section>
+<h2>Seguridad del equipo</h2>
+<div class="note">
+<p>Las credenciales no se publican en el chat ni en el repositorio. Van solo en <code>cypress.env.json</code>, que está excluido de Git.</p>
+<p>Una contraseña de un compañero quedó escrita en el chat de trabajo. Debe cambiarla cuando termine el trabajo.</p>
+<p>Las pruebas de carga y el escaneo solo se hacen contra el servidor autorizado, dentro de la ventana y los límites que fije el docente. Probar sin autorización puede ser un delito informático (Ley 1273 de 2009).</p>
+</div>
+</section>
+</main>

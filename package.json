@@ -1,0 +1,15 @@
+{
+  "name": "unidoc-qa-cypress",
+  "version": "1.0.0",
+  "description": "Pruebas funcionales Cypress - UniDoc (roles Docencia y Aspirante) - Calidad de Software II",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:docencia": "cypress run --spec \"cypress/e2e/docencia/**/*.cy.js\"",
+    "cy:aspirante": "cypress run --spec \"cypress/e2e/aspirante/**/*.cy.js\""
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
