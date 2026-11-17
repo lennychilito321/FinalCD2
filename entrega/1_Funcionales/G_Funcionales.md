@@ -3,7 +3,7 @@
 > Todos los resultados son de ejecuciones reales de Cypress. Lo marcado **[COMPLETAR]** lo debe llenar el grupo.
 
 ## 1. Portada y control de versiones
-Ver `00_Portada_y_severidad.md`. Grupo: **[COMPLETAR G__]**.
+Ver `00_Portada_y_severidad.md`. Grupo: sin número asignado; integrantes en la portada.
 
 | Versión | Fecha | Autor | Cambios |
 |---|---|---|---|

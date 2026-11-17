@@ -1,6 +1,6 @@
 # Carpeta de entrega – Trabajo final Calidad de Software II (17 nov 2026)
 
-Entregar al docente: 3 PDF + enlace al repositorio. Nombres: `G{n}_Funcionales.pdf`, `G{n}_Rendimiento.pdf`, `G{n}_Vulnerabilidades.pdf`. Los PDF se generan con `python entrega/generar_pdf.py`.
+Entregar al docente: 3 PDF + enlace al repositorio. Nombres: `G_Funcionales.pdf` (o `G{n}_...` si el docente asigna número), `G{n}_Rendimiento.pdf`, `G{n}_Vulnerabilidades.pdf`. Los PDF se generan con `python entrega/generar_pdf.py`.
 
 | Carpeta | Contenido | Estado (rol Aspirante) |
 |---|---|---|
@@ -10,7 +10,7 @@ Entregar al docente: 3 PDF + enlace al repositorio. Nombres: `G{n}_Funcionales.p
 
 ## Lista de control antes de entregar
 - [ ] Docente: confirmar roles, ventana, límite de carga (se usó 20 req/s) y autorización del escaneo
-- [ ] Completar **[COMPLETAR]** (número de grupo, ventana, evidencia de autorización)
+- [ ] Completar **[COMPLETAR]** (ventana, evidencia de autorización)
 - [ ] Cada integrante con commits propios (`git config user.name/email` de cada uno)
 - [ ] Probar `npm install` y `npm run cy:publico` en OTRO equipo
 - [ ] Informe 3 con el reporte real de OpenVAS (anexo privado)

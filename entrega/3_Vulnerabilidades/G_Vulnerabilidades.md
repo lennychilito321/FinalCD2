@@ -3,7 +3,7 @@
 > **Confidencial: se entrega solo al docente.** Este archivo en el repositorio es solo la estructura. Los hallazgos reales y el reporte de OpenVAS **no se publican en Git**; viven en el PDF entregado y en `seguridad/reportes/` (excluida por `.gitignore`).
 
 ## 1. Portada y control de versiones
-Ver `../1_Funcionales/00_Portada_y_severidad.md`. Grupo: **[COMPLETAR G__]**.
+Ver `../1_Funcionales/00_Portada_y_severidad.md`. Grupo: sin número asignado; integrantes en la portada.
 
 ## 2. Resumen ejecutivo
 _[Riesgo general, hallazgos por severidad y 3 acciones urgentes: completar con el reporte real.]_

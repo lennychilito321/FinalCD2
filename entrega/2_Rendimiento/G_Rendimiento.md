@@ -1,7 +1,7 @@
 # Informe 2 – Rendimiento (carga y estrés) · Nova / UniDoc · Aspirante
 
 ## 1. Portada y control de versiones
-Grupo: **[COMPLETAR G__]** · Integrantes: ver `../1_Funcionales/00_Portada_y_severidad.md` · Aplicación: UniDoc – Aspirante · Fecha: 2026-11-16 · v1.0 · Autor: Lenny Chilito
+Grupo: sin número asignado · Integrantes: ver `../1_Funcionales/00_Portada_y_severidad.md` · Aplicación: UniDoc – Aspirante · Fecha: 2026-11-16 · v1.0 · Autor: Lenny Chilito
 
 ## 2. Resumen ejecutivo
 Los flujos públicos que usa un aspirante (inicio de UniDoc, listado de convocatorias, pantalla de inicio de sesión) respondieron **sin ningún error en 4 440 peticiones** (1 – 20 peticiones por segundo). La mediana fue ≈33 ms y el p95 nunca superó 53 ms, muy por debajo del umbral de 2 s. **No se encontró punto de degradación ni de ruptura dentro del tope probado (20 req/s)**; la capacidad real por encima de ese valor es desconocida porque el tope fue autoimpuesto. Recomendación: repetir el estrés con el límite que fije el docente y probar flujos autenticados.

@@ -2,7 +2,7 @@
 Uso: python entrega/generar_pdf.py [N_GRUPO]    Requiere: pip install markdown, Google Chrome."""
 import sys, pathlib, subprocess, markdown
 
-N = sys.argv[1] if len(sys.argv) > 1 else "_"
+N = sys.argv[1] if len(sys.argv) > 1 else ""
 root = pathlib.Path(__file__).parent
 out = root / "pdf"; out.mkdir(exist_ok=True)
 portada = (root / "1_Funcionales" / "00_Portada_y_severidad.md").read_text(encoding="utf8")

@@ -1,7 +1,7 @@
 # Portada común (los 3 informes)
 
 **Calidad de Software II – Trabajo Final** · Docente: Jefferson Andrés Muñoz
-**Grupo:** G__ · **Aplicación:** UniDoc (plataforma Nova) · **Rol probado en esta entrega:** Aspirante (Docencia pendiente de cuenta con ese rol)
+**Grupo:** sin número asignado (integrantes abajo) · **Aplicación:** UniDoc (plataforma Nova) · **Rol probado en esta entrega:** Aspirante (Docencia pendiente de cuenta con ese rol)
 
 | Integrante | Correo institucional |
 |---|---|
