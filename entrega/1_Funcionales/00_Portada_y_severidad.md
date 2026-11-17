@@ -1,4 +1,4 @@
-# Portada común (los 3 informes)
+# Calidad de Software II – Trabajo Final
 
 **Calidad de Software II – Trabajo Final** · Docente: Jefferson Andrés Muñoz
 **Grupo:** sin número asignado (integrantes abajo) · **Aplicación:** UniDoc (plataforma Nova) · **Rol probado en esta entrega:** Aspirante (Docencia pendiente de cuenta con ese rol)
@@ -7,13 +7,14 @@
 |---|---|
 | Miguel Llantén | miguel.llanten.v@uniautonoma.edu.co |
 | Calet Ibarra | calet.ibarra.i@uniautonoma.edu.co |
-| Luis Ramos Sanjuan | luis.ramos.sanjuan@uniautonoma.edu.co *(verificar dominio: en el chat decía "uniutoma")* |
+| Luis Ramos Sanjuan | luis.ramos.sanjuan@uniautonoma.edu.co |
 | Lenny Chilito | lenny.chilito.l@uniautonoma.edu.co |
 
 ## Control de versiones
 | Versión | Fecha | Autor | Cambios |
 |---|---|---|---|
-| 0.1 | 2026-11-__ | | Borrador inicial |
+| 0.1 | 2026-11-16 | Grupo | Borrador inicial |
+| 1.0 | 2026-11-17 | Lenny Chilito | Versión de entrega |
 
 ## Sistema de identificadores (compartido)
 - Casos funcionales: `FUN-xx` · Defectos: `DEF-xx` · Escenarios de rendimiento: `PER-xx` · Hallazgos de seguridad: `VUL-xx`

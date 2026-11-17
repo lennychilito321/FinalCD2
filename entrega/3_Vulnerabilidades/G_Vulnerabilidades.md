@@ -9,7 +9,11 @@ Ver `../1_Funcionales/00_Portada_y_severidad.md`. Grupo: sin número asignado; i
 _[Riesgo general, hallazgos por severidad y 3 acciones urgentes: completar con el reporte real.]_
 
 ## 3. Autorización y reglas de enfrentamiento
-Objetivo: `nova.uniautonoma.edu.co`. Ventana: _[COMPLETAR con la indicada por el docente]_. Sin explotación y sin denegación de servicio. Autorización del docente como propietario del sistema: _[COMPLETAR evidencia]_.
+- **Objetivo autorizado:** `nova.uniautonoma.edu.co` (resuelve a `utm.uniautonoma.edu.co`, 179.1.113.103). Solo ese host; ningún otro sistema.
+- **Autorización:** el enunciado del trabajo final, publicado el 9 de noviembre de 2026 por el docente Jefferson Andrés Muñoz, asigna la plataforma Nova como sistema bajo prueba y establece que el docente actúa como propietario del sistema para este ejercicio. No se dispuso de una autorización adicional por escrito con ventana horaria específica; el grupo la tomó como el periodo del trabajo.
+- **Ventana de ejecución:** 16–17 de noviembre de 2026 (periodo de entrega del trabajo).
+- **Restricciones:** sin explotación de vulnerabilidades, sin denegación de servicio, sin acceso a datos fuera del rol, escaneo sin credenciales y con el perfil estándar de Greenbone, que no incluye pruebas destructivas.
+- **Confidencialidad:** el informe y el reporte se entregan solo al docente (Ley 1273 de 2009).
 
 ## 4. Alcance y metodología
 Greenbone Community Edition (OpenVAS) en Docker (`seguridad/greenbone/docker-compose.yml`), perfil **Full and fast**, escaneo **sin credenciales**, lanzado con `seguridad/escanear.sh`. Fecha/hora y versión del feed: _[COMPLETAR del reporte]_.
