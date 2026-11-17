@@ -11,6 +11,10 @@ informes = {
     f"G{N}_Rendimiento": root / "2_Rendimiento" / "G_Rendimiento.md",
     f"G{N}_Vulnerabilidades": root / "3_Vulnerabilidades" / "G_Vulnerabilidades.md",
 }
+# El informe 3 con hallazgos reales es confidencial: vive en un archivo que NO se sube a Git.
+privado = root / "3_Vulnerabilidades" / "G_Vulnerabilidades_PRIVADO.md"
+if privado.exists():
+    informes[f"G{N}_Vulnerabilidades"] = privado
 CSS = """body{font-family:Segoe UI,Arial,sans-serif;font-size:11pt;line-height:1.45;margin:0 8px}
 h1{font-size:20pt;border-bottom:2px solid #1f3a5f;padding-bottom:4px}h2{font-size:14pt;color:#1f3a5f;margin-top:18px}
 table{border-collapse:collapse;width:100%;margin:8px 0;font-size:9pt}th,td{border:1px solid #bbb;padding:4px 6px;text-align:left;vertical-align:top}

@@ -14,3 +14,4 @@ seguridad/greenbone/*.log
 *.log
 cy-run.log
 entrega/pdf/
+entrega/3_Vulnerabilidades/G_Vulnerabilidades_PRIVADO.md
