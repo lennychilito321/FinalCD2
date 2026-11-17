@@ -1,16 +1,17 @@
-# Informe 1 – Pruebas funcionales · UniDoc · Rol Aspirante (BORRADOR)
+# Informe 1 – Pruebas funcionales · UniDoc · Rol Aspirante
 
-> Borrador con resultados reales de la ejecución de Cypress. Pendiente: rol Docencia, FUN-15 y FUN-16 completos. Todo dato marcado **[COMPLETAR]** debe llenarlo el grupo.
+> Todos los resultados son de ejecuciones reales de Cypress. Lo marcado **[COMPLETAR]** lo debe llenar el grupo.
 
 ## 1. Portada y control de versiones
 Ver `00_Portada_y_severidad.md`. Grupo: **[COMPLETAR G__]**.
 
 | Versión | Fecha | Autor | Cambios |
 |---|---|---|---|
-| 0.1 | 2026-11-16 | [COMPLETAR] | Borrador con resultados del rol Aspirante |
+| 0.1 | 2026-11-16 | Grupo | Borrador con resultados del rol Aspirante |
+| 1.0 | 2026-11-17 | Lenny Chilito | Se agregan FUN-05 a FUN-07 (zona pública), resultados de rendimiento y consolidación del repositorio |
 
 ## 2. Resumen ejecutivo
-Se probó el rol **Aspirante** de UniDoc (módulo de convocatorias de la plataforma Nova). Se diseñaron 15 casos para el rol Aspirante y el inicio de sesión, de los cuales se ejecutaron 10 automatizados con Cypress y los 10 fueron aprobados (100 %). Un caso (FUN-15) se omitió a propósito porque puede crear una postulación real y requiere permiso del docente. El rol **Docencia no se evaluó** porque ninguna cuenta del grupo tiene ese rol asignado. No se encontraron defectos funcionales en los flujos de lectura probados. Recomendación: el rol Aspirante queda **apto con reservas**, pendiente de probar la postulación y los permisos entre roles.
+Se probó el rol **Aspirante** de UniDoc (módulo de convocatorias de la plataforma Nova). Se diseñaron 14 casos (inicio de sesión, zona pública, perfil, convocatorias, postulaciones, datos personales y permisos). Se ejecutaron 13 automatizados con Cypress y los 13 fueron aprobados (100 %). Un caso (FUN-15) se omitió a propósito porque puede crear una postulación real y requiere permiso del docente. No se encontraron defectos funcionales en los flujos probados. El rol **Docencia no se evaluó** porque ninguna cuenta del grupo tiene ese rol. Recomendación: el rol Aspirante queda **apto con reservas**, pendiente de probar la postulación y un control de permisos con evidencia sólida (FUN-16 aprobó aceptando un 404).
 
 ## 3. Objetivo y alcance
 **Dentro:** inicio de sesión de UniDoc, Inicio del aspirante, listado y detalle de convocatorias, Mis postulaciones, Datos personales.
@@ -40,6 +41,7 @@ UniDoc es el módulo de convocatorias, avales y contratación docente de Nova. E
 |---|---|
 | Inicio de sesión | FUN-01, FUN-02, FUN-03 |
 | Acceso protegido | FUN-04, FUN-16 |
+| Convocatorias públicas y registro | FUN-05, FUN-06, FUN-07 |
 | Inicio del aspirante / hoja de vida | FUN-10 |
 | Listado de convocatorias | FUN-11 |
 | Detalle de convocatoria | FUN-12 |
@@ -54,6 +56,9 @@ UniDoc es el módulo de convocatorias, avales y contratación docente de Nova. E
 | FUN-02 | Login | Correo y clave inválidos | correo inexistente + clave falsa | Mensaje "Credenciales incorrectas"; permanece en el login | Alta | Negativo | Sí |
 | FUN-03 | Login | Campos vacíos | — | "Correo no valido" y "Contraseña muy corta" | Media | Negativo | Sí |
 | FUN-04 | Permisos | Ruta protegida sin sesión | Sin sesión | No se muestra la hoja de vida | Alta | Permisos | Sí |
+| FUN-05 | Convocatorias | Listado público sin sesión | — | "Convocatorias" con botón Ver Detalles | Alta | Positivo | Sí |
+| FUN-06 | Registro | Paso 1 sin nombre ni apellido | campos vacíos | Permanece en "Paso 1 de 5" | Media | Negativo | Sí |
+| FUN-07 | Convocatorias | Convocatoria cerrada | — | Botón "Convocatoria cerrada" deshabilitado | Media | Negativo | Sí |
 | FUN-10 | Inicio | Ver perfil y hoja de vida | — | Se ve "Aspirante", "Hoja de vida", "Formación educativa" | Alta | Positivo | Sí |
 | FUN-11 | Convocatorias | Listado de convocatorias abiertas | — | "Convocatorias Disponibles" con botones Ver Detalles y Postularse | Alta | Positivo | Sí |
 | FUN-12 | Convocatorias | Abrir detalle | — | Se abre sin error | Media | Positivo | Sí |
@@ -62,15 +67,20 @@ UniDoc es el módulo de convocatorias, avales y contratación docente de Nova. E
 | FUN-15 | Postulación | Postular con perfil incompleto | — | Rechazo con validación | Alta | Negativo | **Omitido** |
 | FUN-16 | Permisos | Acceso a módulo de otro rol | URL real de otro rol **[COMPLETAR]** | Acceso denegado | Alta | Permisos | Parcial |
 
-## 9. Resultados de ejecución (2026-11-16)
+## 9. Resultados de ejecución
+Ejecuciones: (A) suite del grupo, 2026-11-16, registrada en `PROCESO.md`; (B) FUN-05 a FUN-07, repetidas desde este repositorio limpio con `npx cypress run --spec "cypress/e2e/publico/**"` (3/3 aprobados).
+
 | ID | Resultado | Evidencia |
 |---|---|---|
-| FUN-01..04 | Aprobado (4/4) | `cypress/videos/auth/login.cy.js.mp4` |
-| FUN-10..14, FUN-16 | Aprobado (6/6)* | `cypress/videos/aspirante/aspirante.cy.js.mp4` |
+| FUN-01..04 | Aprobado (4/4) | `evidencia/login.cy.js.mp4` |
+| FUN-05..07 | Aprobado (3/3) | `evidencia/publico.cy.js.mp4` |
+| FUN-10..14, FUN-16 | Aprobado (6/6)* | `evidencia/aspirante.cy.js.mp4` |
 | FUN-15 | Omitido | — |
 
-Resumen: 11 ejecutables, **10 aprobados (100 % de los ejecutados)**, 0 fallidos, 1 omitido.
+Resumen: 14 casos diseñados, 13 ejecutados, **13 aprobados (100 % de los ejecutados; 93 % del total)**, 0 fallidos, 1 omitido.
 \* FUN-16 aprobó aceptando un 404, por lo que **no es evidencia de control de permisos** hasta usar una URL real de otro rol.
+
+Mínimos del enunciado: ≥12 casos (14), ≥8 automatizados (13), ≥3 negativos ejecutados (FUN-02, 03, 06, 07), ≥2 de permisos (FUN-04 y FUN-16, este último débil).
 
 ## 10. Reporte de defectos
 No se registraron defectos en los flujos ejecutados.
@@ -85,4 +95,4 @@ Los flujos de lectura del Aspirante son estables: las pantallas cargan y muestra
 Rol Aspirante: **apto con reservas**. Recomendaciones: (1) probar FUN-15 con permiso del docente, (2) completar FUN-16 con una URL real de otro rol, (3) asignar el rol Docencia a una cuenta de prueba y repetir este informe para ese rol.
 
 ## 13. Anexos
-Repositorio: **[COMPLETAR enlace]**. Videos y capturas: carpeta `cypress/videos` y `cypress/screenshots`.
+Repositorio: https://github.com/lennychilito321/FinalCD2. Videos y capturas: carpeta `cypress/videos` y `cypress/screenshots`.

@@ -5,3 +5,12 @@ cypress/screenshots/
 cypress/downloads/
 .env
 entrega/4_Repositorio_Cypress/
+rendimiento/bin/
+rendimiento/resultados/**/*.bin
+seguridad/.gvm-admin-pass.txt
+seguridad/reportes/
+seguridad/*.log
+seguridad/greenbone/*.log
+*.log
+cy-run.log
+entrega/pdf/

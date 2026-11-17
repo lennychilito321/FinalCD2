@@ -1,3 +1,0 @@
-GET https://nova.uniautonoma.edu.co/convocatorias-app/api/publico/convocatorias
-GET https://nova.uniautonoma.edu.co/convocatorias-app/convocatorias-publicas
-GET https://nova.uniautonoma.edu.co/convocatorias-app/inicio-sesion

@@ -1,20 +1,41 @@
-# Informe 3 – Pruebas de vulnerabilidades (OpenVAS)
+# Informe 3 – Vulnerabilidades (OpenVAS) · UniDoc · Aspirante
 
-> Mínimo: 1 escaneo del objetivo autorizado; análisis detallado de ≥5 hallazgos (o todos). Sin explotación, sin DoS, solo el objetivo autorizado.
+> **Confidencial: se entrega solo al docente.** Este archivo en el repositorio es solo la estructura. Los hallazgos reales y el reporte de OpenVAS **no se publican en Git**; viven en el PDF entregado y en `seguridad/reportes/` (excluida por `.gitignore`).
 
-1. Portada y control de versiones
-2. Resumen ejecutivo (no técnico): riesgo general, hallazgos por severidad, 3 acciones más urgentes
-3. Autorización y reglas de enfrentamiento: objetivo, ventana, restricciones, confirmación del docente como propietario
-4. Alcance y metodología: objetivo, OpenVAS/GVM versión, perfil de escaneo, fecha/hora, con o sin credenciales
-5. Resultados generales: conteo por severidad (crítica/alta/media/baja/informativa); puertos y servicios
-6. Tabla de hallazgos
+## 1. Portada y control de versiones
+Ver `../1_Funcionales/00_Portada_y_severidad.md`. Grupo: **[COMPLETAR G__]**.
 
-| ID | Nombre | CVE | CVSS | Severidad | Host:puerto | Estado (confirmado / falso positivo probable) |
+## 2. Resumen ejecutivo
+_[Riesgo general, hallazgos por severidad y 3 acciones urgentes: completar con el reporte real.]_
+
+## 3. Autorización y reglas de enfrentamiento
+Objetivo: `nova.uniautonoma.edu.co`. Ventana: _[COMPLETAR con la indicada por el docente]_. Sin explotación y sin denegación de servicio. Autorización del docente como propietario del sistema: _[COMPLETAR evidencia]_.
+
+## 4. Alcance y metodología
+Greenbone Community Edition (OpenVAS) en Docker (`seguridad/greenbone/docker-compose.yml`), perfil **Full and fast**, escaneo **sin credenciales**, lanzado con `seguridad/escanear.sh`. Fecha/hora y versión del feed: _[COMPLETAR del reporte]_.
+
+## 5. Resultados generales
+Conteo por severidad (crítica, alta, media, baja, informativa) y puertos/servicios detectados: _[COMPLETAR]_.
+
+## 6. Tabla de hallazgos
+| ID | Nombre | CVE | CVSS | Severidad | Host:puerto | Estado |
 |---|---|---|---|---|---|---|
+| VUL-01 | _[…]_ | | | | | |
 
-7. Análisis detallado (por hallazgo): descripción, impacto en el negocio, relación con los roles Docencia/Aspirante, evidencia, recomendación
-8. Falsos positivos y limitaciones
-9. Matriz de riesgo (probabilidad × impacto)
-10. Plan de remediación (acción, responsable sugerido, plazo según severidad)
-11. Conclusiones: estado de seguridad y relación con la característica Seguridad de ISO/IEC 25010
-12. Anexos: reporte completo exportado de OpenVAS
+## 7. Análisis detallado (≥5 hallazgos, o todos si hay menos)
+Por cada VUL-xx: descripción, impacto en el negocio, relación con el rol Aspirante (datos personales de postulantes, hojas de vida, Ley 1581 de 2012), evidencia y recomendación.
+
+## 8. Falsos positivos y limitaciones
+El escaneo no detecta fallos de lógica ni de autorización por rol; el servidor es compartido (`utm.uniautonoma.edu.co`).
+
+## 9. Matriz de riesgo
+Probabilidad × impacto: _[COMPLETAR]_.
+
+## 10. Plan de remediación
+Crítica: 7 días · Alta: 30 · Media: 90 · Baja: siguiente ciclo. Responsable sugerido: Tecnología/Infraestructura de la universidad.
+
+## 11. Conclusiones
+Estado de seguridad y relación con la característica *Seguridad* de ISO/IEC 25010 (confidencialidad, integridad, no repudio, responsabilidad, autenticidad): _[COMPLETAR]_.
+
+## 12. Anexos
+Reporte exportado de OpenVAS (PDF/CSV), solo en la entrega privada.

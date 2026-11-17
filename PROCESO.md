@@ -16,14 +16,20 @@ Calidad de Software II · Trabajo final · entrega 17 de noviembre de 2026.
 | 16 nov | Informe de estado para los compañeros (página) | Publicado, privado |
 | 16 nov | Borrador del informe de funcionales (Aspirante), planes de rendimiento y OpenVAS, carpeta `entrega/` | Sin credenciales en los archivos |
 
+| 16–17 nov | Se ejecuta rendimiento con Vegeta (carga 1–5 req/s, estrés 2–20 req/s, recuperación) | 4 440 peticiones, 0 errores, p95 ≤ 56,8 ms (`rendimiento/resultados/`) |
+| 16–17 nov | Se agrega `cypress/e2e/publico` (FUN-05..07) y se valida en repo limpio | 3/3 aprobados |
+| 16–17 nov | Greenbone Community en Docker y script `seguridad/escanear.sh` | Escaneo del host autorizado en curso |
+
 ## Resultados de pruebas ejecutadas (Cypress, 16 nov)
 - `auth/login.cy.js`: 4 de 4 aprobados.
+- `publico/publico.cy.js`: 3 de 3 aprobados.
 - `aspirante/aspirante.cy.js`: 6 aprobados, 1 omitido (FUN-15).
 - `docencia/docencia.cy.js`: 0 de 5; el login falló antes de empezar (cuenta sin contraseña de formulario y sin rol Docencia).
 
 ## Decisiones y por qué
 - **FUN-15 omitido:** puede crear una postulación real en un sistema compartido; requiere permiso del docente.
-- **Sin pruebas de carga ni escaneo:** el enunciado exige ventana, límites y autorización del docente. Probar sin eso es falta ética grave y puede ser delito (Ley 1273 de 2009).
+- **Rendimiento con tope conservador:** sin un límite escrito del docente se limitó a 20 req/s y solo GET públicos; queda como supuesto en el informe. El escaneo se hace solo sin explotación ni DoS (Ley 1273 de 2009).
+- **Sin credenciales en automatizaciones asistidas:** el login con contraseña lo ejecuta cada integrante en su equipo con su `cypress.env.json`.
 - **Credenciales fuera de Git:** solo en `cypress.env.json`, excluido por `.gitignore`.
 - **FUN-16 débil:** acepta un 404; no es evidencia de permisos hasta tener una URL real de otro rol.
 
