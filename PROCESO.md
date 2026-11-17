@@ -17,7 +17,7 @@ Calidad de Software II · Trabajo final · entrega 17 de noviembre de 2026.
 | 16 nov | Borrador del informe de funcionales (Aspirante), planes de rendimiento y OpenVAS, carpeta `entrega/` | Sin credenciales en los archivos |
 
 | 16–17 nov | Se ejecuta rendimiento con Vegeta (carga 1–5 req/s, estrés 2–20 req/s, recuperación) | 4 440 peticiones, 0 errores, p95 ≤ 56,8 ms (`rendimiento/resultados/`) |
-| 16–17 nov | Se agrega `cypress/e2e/publico` (FUN-05..07) y se valida en repo limpio | 3/3 aprobados |
+| 16–17 nov | Se agrega `cypress/e2e/publico` (FUN-17..19) y se valida en repo limpio | 3/3 aprobados |
 | 16–17 nov | Greenbone Community en Docker y script `seguridad/escanear.sh` | Escaneo del host autorizado en curso |
 
 ## Resultados de pruebas ejecutadas (Cypress, 16 nov)

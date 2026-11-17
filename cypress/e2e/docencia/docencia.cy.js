@@ -1,6 +1,7 @@
 const sel = require("../../support/selectors");
 
-describe("UniDoc - Rol Docencia", () => {
+// Opcional: ninguna cuenta del grupo tiene el rol Docencia. Activar con DOCENCIA_HABILITADO=true en cypress.env.json.
+(Cypress.env("DOCENCIA_HABILITADO") ? describe : describe.skip)("UniDoc - Rol Docencia", () => {
   beforeEach(() => {
     cy.loginAs("docencia");
     cy.visit("/");

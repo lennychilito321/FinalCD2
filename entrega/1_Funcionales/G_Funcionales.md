@@ -8,7 +8,7 @@ Ver `00_Portada_y_severidad.md`. Grupo: sin número asignado; integrantes en la 
 | Versión | Fecha | Autor | Cambios |
 |---|---|---|---|
 | 0.1 | 2026-11-16 | Grupo | Borrador con resultados del rol Aspirante |
-| 1.0 | 2026-11-17 | Lenny Chilito | Se agregan FUN-05 a FUN-07 (zona pública), resultados de rendimiento y consolidación del repositorio |
+| 1.0 | 2026-11-17 | Lenny Chilito | Se agregan FUN-17 a FUN-19 (zona pública), resultados de rendimiento y consolidación del repositorio |
 
 ## 2. Resumen ejecutivo
 Se probó el rol **Aspirante** de UniDoc (módulo de convocatorias de la plataforma Nova). Se diseñaron 14 casos (inicio de sesión, zona pública, perfil, convocatorias, postulaciones, datos personales y permisos). Se ejecutaron 13 automatizados con Cypress y los 13 fueron aprobados (100 %). Un caso (FUN-15) se omitió a propósito porque puede crear una postulación real y requiere permiso del docente. No se encontraron defectos funcionales en los flujos probados. El rol **Docencia no se evaluó** porque ninguna cuenta del grupo tiene ese rol. Recomendación: el rol Aspirante queda **apto con reservas**, pendiente de probar la postulación y un control de permisos con evidencia sólida (FUN-16 aprobó aceptando un 404).
@@ -41,7 +41,7 @@ UniDoc es el módulo de convocatorias, avales y contratación docente de Nova. E
 |---|---|
 | Inicio de sesión | FUN-01, FUN-02, FUN-03 |
 | Acceso protegido | FUN-04, FUN-16 |
-| Convocatorias públicas y registro | FUN-05, FUN-06, FUN-07 |
+| Convocatorias públicas y registro | FUN-17, FUN-18, FUN-19 |
 | Inicio del aspirante / hoja de vida | FUN-10 |
 | Listado de convocatorias | FUN-11 |
 | Detalle de convocatoria | FUN-12 |
@@ -56,9 +56,9 @@ UniDoc es el módulo de convocatorias, avales y contratación docente de Nova. E
 | FUN-02 | Login | Correo y clave inválidos | correo inexistente + clave falsa | Mensaje "Credenciales incorrectas"; permanece en el login | Alta | Negativo | Sí |
 | FUN-03 | Login | Campos vacíos | — | "Correo no valido" y "Contraseña muy corta" | Media | Negativo | Sí |
 | FUN-04 | Permisos | Ruta protegida sin sesión | Sin sesión | No se muestra la hoja de vida | Alta | Permisos | Sí |
-| FUN-05 | Convocatorias | Listado público sin sesión | — | "Convocatorias" con botón Ver Detalles | Alta | Positivo | Sí |
-| FUN-06 | Registro | Paso 1 sin nombre ni apellido | campos vacíos | Permanece en "Paso 1 de 5" | Media | Negativo | Sí |
-| FUN-07 | Convocatorias | Convocatoria cerrada | — | Botón "Convocatoria cerrada" deshabilitado | Media | Negativo | Sí |
+| FUN-17 | Convocatorias | Listado público sin sesión | — | "Convocatorias" con botón Ver Detalles | Alta | Positivo | Sí |
+| FUN-18 | Registro | Paso 1 sin nombre ni apellido | campos vacíos | Permanece en "Paso 1 de 5" | Media | Negativo | Sí |
+| FUN-19 | Convocatorias | Convocatoria cerrada | — | Botón "Convocatoria cerrada" deshabilitado | Media | Negativo | Sí |
 | FUN-10 | Inicio | Ver perfil y hoja de vida | — | Se ve "Aspirante", "Hoja de vida", "Formación educativa" | Alta | Positivo | Sí |
 | FUN-11 | Convocatorias | Listado de convocatorias abiertas | — | "Convocatorias Disponibles" con botones Ver Detalles y Postularse | Alta | Positivo | Sí |
 | FUN-12 | Convocatorias | Abrir detalle | — | Se abre sin error | Media | Positivo | Sí |
@@ -68,12 +68,12 @@ UniDoc es el módulo de convocatorias, avales y contratación docente de Nova. E
 | FUN-16 | Permisos | Acceso a módulo de otro rol | URL real de otro rol **[COMPLETAR]** | Acceso denegado | Alta | Permisos | Parcial |
 
 ## 9. Resultados de ejecución
-Ejecuciones: (A) suite del grupo, 2026-11-16, registrada en `PROCESO.md`; (B) FUN-05 a FUN-07, repetidas desde este repositorio limpio con `npx cypress run --spec "cypress/e2e/publico/**"` (3/3 aprobados).
+Ejecuciones: (A) suite del grupo, 2026-11-16, registrada en `PROCESO.md`; (B) **ejecución completa del 2026-11-17** con `npx cypress run` desde este repositorio (Cypress 13.17.0, Electron 118): 4 specs, 19 tests → **13 aprobados, 0 fallidos, 6 omitidos** (FUN-15 por riesgo de datos reales y 5 de Docencia, sin cuenta con ese rol). Los videos de la evidencia son de esta ejecución.
 
 | ID | Resultado | Evidencia |
 |---|---|---|
 | FUN-01..04 | Aprobado (4/4) | `evidencia/login.cy.js.mp4` |
-| FUN-05..07 | Aprobado (3/3) | `evidencia/publico.cy.js.mp4` |
+| FUN-17..19 | Aprobado (3/3) | `evidencia/publico.cy.js.mp4` |
 | FUN-10..14, FUN-16 | Aprobado (6/6)* | `evidencia/aspirante.cy.js.mp4` |
 | FUN-15 | Omitido | — |
 
