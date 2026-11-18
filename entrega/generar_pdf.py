@@ -11,6 +11,11 @@ informes = {
     f"G{N}_Rendimiento": root / "2_Rendimiento" / "G_Rendimiento.md",
     f"G{N}_Vulnerabilidades": root / "3_Vulnerabilidades" / "G_Vulnerabilidades.md",
 }
+CSS = """body{font-family:Segoe UI,Arial,sans-serif;font-size:11pt;line-height:1.45;margin:0 8px}
+h1{font-size:20pt;border-bottom:2px solid #1f3a5f;padding-bottom:4px}h2{font-size:14pt;color:#1f3a5f;margin-top:18px}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:9pt}th,td{border:1px solid #bbb;padding:4px 6px;text-align:left;vertical-align:top}
+th{background:#eef2f7}code{background:#f3f3f3;padding:0 3px}pre{background:#f3f3f3;padding:8px;font-size:9pt;white-space:pre-wrap}
+blockquote{border-left:4px solid #c33;margin:8px 0;padding:2px 10px;background:#fff4f4}.pb{page-break-after:always}"""
 chrome = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 for name, path in informes.items():
     md = portada + "\n\n<div class='pb'></div>\n\n" + path.read_text(encoding="utf8")
