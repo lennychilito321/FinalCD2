@@ -1,7 +1,9 @@
 # Calidad de Software II – Trabajo Final
 
-**Calidad de Software II – Trabajo Final** · Docente: Jefferson Andrés Muñoz
-**Grupo:** sin número asignado (integrantes abajo) · **Aplicación:** UniDoc (plataforma Nova) · **Rol probado en esta entrega:** Aspirante (Docencia pendiente de cuenta con ese rol)
+**Docente:** Jefferson Andrés Muñoz  
+**Grupo:** sin número asignado (integrantes abajo)  
+**Aplicación:** UniDoc (plataforma Nova)  
+**Rol probado en esta entrega:** Aspirante (Docencia pendiente de cuenta con ese rol)
 
 | Integrante | Correo institucional |
 |---|---|

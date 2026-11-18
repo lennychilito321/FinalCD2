@@ -23,6 +23,13 @@ blockquote{border-left:4px solid #c33;margin:8px 0;padding:2px 10px;background:#
 chrome = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 for name, path in informes.items():
     md = portada + "\n\n<div class='pb'></div>\n\n" + path.read_text(encoding="utf8")
+    # Markdown exige una línea en blanco antes de una tabla; se inserta si falta.
+    fixed = []
+    for l in md.split("\n"):
+        if l.startswith("|") and fixed and fixed[-1].strip() and not fixed[-1].startswith("|"):
+            fixed.append("")
+        fixed.append(l)
+    md = "\n".join(fixed)
     html = markdown.markdown(md, extensions=["tables", "fenced_code", "md_in_html"])
     h = out / f"{name}.html"
     h.write_text(f"<!doctype html><meta charset='utf-8'><style>{CSS}</style>{html}", encoding="utf8")
