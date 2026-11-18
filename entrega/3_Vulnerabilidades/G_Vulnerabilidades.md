@@ -24,7 +24,7 @@ Se escaneó con Greenbone/OpenVAS el servidor que aloja la plataforma Nova (`nov
 - **Autorización:** el enunciado del trabajo final, publicado el 9 de noviembre de 2026 por el docente Jefferson Andrés Muñoz, asigna la plataforma Nova como sistema bajo prueba y establece al docente como propietario del sistema para este ejercicio. No se dispuso de una autorización adicional por escrito con ventana horaria específica; el grupo la tomó como el periodo del trabajo.
 - **Ventana de ejecución:** 16–17 de noviembre de 2026 (periodo de entrega del trabajo). El escaneo se ejecutó el 17 de noviembre entre las 00:29 y las 02:50 (hora local; 05:29–07:50 UTC).
 - **Restricciones respetadas:** sin explotación de vulnerabilidades, sin denegación de servicio, sin acceso a datos fuera del rol y escaneo sin credenciales con el perfil estándar de Greenbone, que no incluye pruebas destructivas. Tampoco se abrió ni se navegó por la interfaz del puerto 10443: solo se usaron los datos que reportó el escáner.
-- **Confidencialidad:** informe y reporte se entregan solo al docente (Ley 1273 de 2009).
+- **Confidencialidad:** el enunciado indica que los hallazgos se entregan solo al docente; por decisión del grupo el informe y el reporte también se publicaron en el repositorio del trabajo.
 
 ## 4. Alcance y metodología
 | Elemento | Valor |
@@ -162,5 +162,5 @@ Con lo evaluado, el estado de seguridad es **aceptable con observaciones**: no h
 Este resultado **no certifica** la seguridad de UniDoc: la lógica de la aplicación no fue evaluada.
 
 ## 12. Anexos
-- Anexo A: reporte completo exportado de OpenVAS (`Anexo_Reporte_OpenVAS.pdf`) y CSV con los 50 resultados (`reporte_openvas.csv`), entregados solo al docente.
+- Anexo A: reporte completo exportado de OpenVAS (`Anexo_Reporte_OpenVAS.pdf`) y CSV con los 50 resultados (`reporte_openvas.csv`), incluidos en `entrega/pdf/`.
 - Script de ejecución: `seguridad/escanear.sh` y `seguridad/greenbone/docker-compose.yml` (en el repositorio).
