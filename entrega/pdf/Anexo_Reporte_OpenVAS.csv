@@ -1,0 +1,1205 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,QoD,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+179.1.113.103,nova.uniautonoma.edu.co,80,tcp,0.0,Log,70,"","Allowed HTTP Methods Enumeration","Enumerates which HTTP methods are allowed.","The following list contains the URLs and corresponding supported HTTP methods.
+
+URL                             | HTTP Methods
+--------------------------------------------------------------------------------
+http://nova.uniautonoma.edu.co/ | GET,HEAD,POST,PUT,DELETE,CONNECT,OPTIONS,TRACE
+",1.3.6.1.4.1.25623.1.0.153974,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,7a948542-a8e8-4009-84c1-b01d0eee7b45,"","","","'- Basic HTTP methods: GET, HEAD, POST, PUT, DELETE, CONNECT,
+  OPTIONS, TRACE
+
+  - Extended HTTP methods: ACL, BASELINE-CONTROL, BIND, CHECKIN, CHECKOUT, COPY, LABEL, LINK, LOCK,
+  MERGE, MKACTIVITY, MKCALENDAR, MKCOL, MKREDIRECTREF, MKWORKSPACE, MOVE, ORDERPATCH, PATCH, PRI,
+  PROPFIND, PROPPATCH, REBIND, REPORT, SEARCH, UNBIND, UNCHECKOUT, UNLINK, UNLOCK, UPDATE,
+  UPDATEREDIRECTREF, VERSION-CONTROL","Sends multiple HTTP requests and checks the responses.
+
+  Disclaimer:
+
+  - This enumeration script is provided 'as is' (means no support is given) and only providing
+  rudimentary information about the possible enabled methods
+
+  - This script doesn't guarantee completeness or full reliability
+
+  For more reliable determination of the enabled HTTP methods please inspect the configuration of
+  the web server manually and directly on the target host.
+Details:
+Allowed HTTP Methods Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.153974)
+Version used: 2025-02-28T05:38:49Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,70,"","Allowed HTTP Methods Enumeration","Enumerates which HTTP methods are allowed.","The following list contains the URLs and corresponding supported HTTP methods.
+
+URL                              | HTTP Methods
+-----------------------------------------------
+https://nova.uniautonoma.edu.co/ | GET,HEAD
+",1.3.6.1.4.1.25623.1.0.153974,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,802e8568-4171-430a-9eeb-9841ae15eac0,"","","","'- Basic HTTP methods: GET, HEAD, POST, PUT, DELETE, CONNECT,
+  OPTIONS, TRACE
+
+  - Extended HTTP methods: ACL, BASELINE-CONTROL, BIND, CHECKIN, CHECKOUT, COPY, LABEL, LINK, LOCK,
+  MERGE, MKACTIVITY, MKCALENDAR, MKCOL, MKREDIRECTREF, MKWORKSPACE, MOVE, ORDERPATCH, PATCH, PRI,
+  PROPFIND, PROPPATCH, REBIND, REPORT, SEARCH, UNBIND, UNCHECKOUT, UNLINK, UNLOCK, UPDATE,
+  UPDATEREDIRECTREF, VERSION-CONTROL","Sends multiple HTTP requests and checks the responses.
+
+  Disclaimer:
+
+  - This enumeration script is provided 'as is' (means no support is given) and only providing
+  rudimentary information about the possible enabled methods
+
+  - This script doesn't guarantee completeness or full reliability
+
+  For more reliable determination of the enabled HTTP methods please inspect the configuration of
+  the web server manually and directly on the target host.
+Details:
+Allowed HTTP Methods Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.153974)
+Version used: 2025-02-28T05:38:49Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,8088,tcp,0.0,Log,70,"","Allowed HTTP Methods Enumeration","Enumerates which HTTP methods are allowed.","The following list contains the URLs and corresponding supported HTTP methods.
+
+URL                                  | HTTP Methods
+-------------------------------------------------------------------------------------
+http://nova.uniautonoma.edu.co:8088/ | GET,HEAD,POST,PUT,DELETE,CONNECT,OPTIONS,TRACE
+",1.3.6.1.4.1.25623.1.0.153974,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,f922545f-3c51-49bf-8640-5082b0fd1f06,"","","","'- Basic HTTP methods: GET, HEAD, POST, PUT, DELETE, CONNECT,
+  OPTIONS, TRACE
+
+  - Extended HTTP methods: ACL, BASELINE-CONTROL, BIND, CHECKIN, CHECKOUT, COPY, LABEL, LINK, LOCK,
+  MERGE, MKACTIVITY, MKCALENDAR, MKCOL, MKREDIRECTREF, MKWORKSPACE, MOVE, ORDERPATCH, PATCH, PRI,
+  PROPFIND, PROPPATCH, REBIND, REPORT, SEARCH, UNBIND, UNCHECKOUT, UNLINK, UNLOCK, UPDATE,
+  UPDATEREDIRECTREF, VERSION-CONTROL","Sends multiple HTTP requests and checks the responses.
+
+  Disclaimer:
+
+  - This enumeration script is provided 'as is' (means no support is given) and only providing
+  rudimentary information about the possible enabled methods
+
+  - This script doesn't guarantee completeness or full reliability
+
+  For more reliable determination of the enabled HTTP methods please inspect the configuration of
+  the web server manually and directly on the target host.
+Details:
+Allowed HTTP Methods Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.153974)
+Version used: 2025-02-28T05:38:49Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,0.0,Log,80,"","CPE Inventory","This routine uses information collected by other routines about
+  CPE identities of operating systems, services and applications detected during the scan.
+
+  Note: Some CPEs for specific products might show up twice or more in the output. Background:
+
+  After a product got renamed or a specific vendor was acquired by another one it might happen that
+  a product gets a new CPE within the NVD CPE Dictionary but older entries are kept with the older
+  CPE.","179.1.113.103|cpe:/a:f5:nginx
+179.1.113.103|cpe:/a:ietf:transport_layer_security:1.2
+179.1.113.103|cpe:/a:ietf:transport_layer_security:1.3
+179.1.113.103|cpe:/a:jquery:jquery:3.5.1
+179.1.113.103|cpe:/a:nginx:nginx
+179.1.113.103|cpe:/a:php:php
+
+",1.3.6.1.4.1.25623.1.0.810002,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,087329c8-bff2-4ed5-bf89-3823a81b9074,"","","","","
+Details:
+CPE Inventory
+(OID: 1.3.6.1.4.1.25623.1.0.810002)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,70,"","Hidden WWW Server Name (HTTP)","It seems that the remote web server tries to hide its
+  version or name.
+
+  However, using a special crafted request, the scanner was able to discover it.","
+It seems that the remote server tries to hide its version
+or name.
+However, using a special crafted request, the scanner was able
+to determine that it is running :
+ OPNsense
+
+Solution: Fix your configuration.
+",1.3.6.1.4.1.25623.1.0.11239,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,2b50f03c-69b7-44f3-a800-d8e6258acb56,"","","","","
+Details:
+Hidden WWW Server Name (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.11239)
+Version used: 2025-01-31T05:37:27Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,0.0,Log,80,"","Hostname Determination Reporting","The script reports information on how the hostname of the target
+  was determined.","Hostname determination for IP 179.1.113.103:
+
+Hostname|Source
+nova.uniautonoma.edu.co|Forward-DNS
+nova.uniautonoma.edu.co|Forward-DNS
+nova.uniautonoma.edu.co|Forward-DNS
+",1.3.6.1.4.1.25623.1.0.108449,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,63136c80-9515-4282-b3c1-50f39b87ad57,"","","","","
+Details:
+Hostname Determination Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.108449)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"","HTTP Security Headers Detection","Checks for security-related headers in HTTP responses from the
+  remote web server. The report lists detected headers with their values and missing headers with
+  references and notes.","Missing Headers                   | More Information
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Content-Security-Policy           | https://secure-headers-project.owasp.org/response-headers/#content-security-policy
+Cross-Origin-Embedder-Policy      | https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy
+Cross-Origin-Opener-Policy        | https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy
+Cross-Origin-Resource-Policy      | https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Resource-Policy
+Document-Policy                   | https://wicg.github.io/document-policy/#document-policy-http-header
+Expect-CT                         | https://secure-headers-project.owasp.org/response-headers/#expect-ct, Note: This header is deprecated.
+Feature-Policy                    | https://secure-headers-project.owasp.org/response-headers/#feature-policy, Note: The Feature Policy header has been renamed to Permissions Policy
+Permissions-Policy                | https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-http-header-field
+Public-Key-Pins                   | Please check the output of the VTs including 'SSL/TLS:' and 'HPKP' in their name for more information and configuration help. Note: Most major browsers have dropped / deprecated support for this header in 2020.
+Referrer-Policy                   | https://secure-headers-project.owasp.org/response-headers/#referrer-policy
+Sec-Fetch-Dest                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest, Note: This is a fetch metadata request header.
+Sec-Fetch-Mode                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode, Note: This is a fetch metadata request header.
+Sec-Fetch-Site                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site, Note: This is a fetch metadata request header.
+Sec-Fetch-User                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User, Note: This is a fetch metadata request header.
+Strict-Transport-Security         | Please check the output of the VTs including 'SSL/TLS:' and 'HSTS' in their name for more information and configuration help.
+X-Content-Type-Options            | https://secure-headers-project.owasp.org/response-headers/#x-content-type-options
+X-Frame-Options                   | https://secure-headers-project.owasp.org/response-headers/#x-frame-options
+X-Permitted-Cross-Domain-Policies | https://secure-headers-project.owasp.org/response-headers/#x-permitted-cross-domain-policies
+X-XSS-Protection                  | https://secure-headers-project.owasp.org/response-headers/#x-xss-protection, Note: Most major browsers have dropped / deprecated support for this header in 2020.
+",1.3.6.1.4.1.25623.1.0.112081,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,89be4123-6b8e-4025-bea1-92c33e25f4ea,"","","","","
+Details:
+HTTP Security Headers Detection
+(OID: 1.3.6.1.4.1.25623.1.0.112081)
+Version used: 2026-11-13T15:36:27Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,80,"","HTTP Server Banner Enumeration","This script tries to detect / enumerate different HTTP server
+  banner (e.g. from a frontend, backend or proxy server) by sending various different HTTP requests
+  (valid and invalid ones).","It was possible to enumerate the following HTTP server banner(s):
+
+Server banner    | Enumeration technique
+-----------------------------------------------------------------------------------
+Server: OPNsense | Invalid HTTP 00.5 GET request (non-existent HTTP version) to '/'
+",1.3.6.1.4.1.25623.1.0.108708,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,ee106704-34b7-4df0-9fa2-3285bbdcf0dd,"","","","","
+Details:
+HTTP Server Banner Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.108708)
+Version used: 2025-01-31T15:39:24Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"","HTTP Server type and version","This script detects and reports the HTTP Server's banner
+  which might provide the type and version of it.","The remote HTTP Server banner is:
+
+Server: nginx
+",1.3.6.1.4.1.25623.1.0.10107,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,c6896545-e4a3-4ce4-b49d-2973af4bb902,"","","","","
+Details:
+HTTP Server type and version
+(OID: 1.3.6.1.4.1.25623.1.0.10107)
+Version used: 2023-08-01T13:29:10Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,0.0,Log,80,"","jQuery Detection Consolidation","Consolidation of jQuery detections.","Detected jQuery
+
+Version:       3.5.1
+Location:      /ui/js/jquery-3.5.1.min.js
+CPE:           cpe:/a:jquery:jquery:3.5.1
+
+Concluded from version/product identification result:
+src=""/ui/js/jquery-3.5.1.min.js
+
+Concluded from version/product identification location:
+- Identified file: https://nova.uniautonoma.edu.co:10443/ui/js/jquery-3.5.1.min.js
+- Referenced at:   https://nova.uniautonoma.edu.co:10443/
+",1.3.6.1.4.1.25623.1.0.150658,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,ad4ef821-a2f2-46a7-8f85-e7a541bc4b61,"","","","","
+Details:
+jQuery Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.150658)
+Version used: 2023-07-14T05:06:08Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,0.0,Log,80,"","nginx Detection Consolidation","Consolidation of Nginx detections.","Detected Nginx
+
+Version:       unknown
+Location:      443/tcp
+CPE:           cpe:/a:nginx:nginx
+
+Concluded from version/product identification result:
+Server: nginx
+
+Detected Nginx
+
+Version:       unknown
+Location:      80/tcp
+CPE:           cpe:/a:nginx:nginx
+
+Concluded from version/product identification result:
+Server: nginx
+<hr><center>nginx</center>
+
+Concluded from version/product identification location:
+http://nova.uniautonoma.edu.co/
+
+Detected Nginx
+
+Version:       unknown
+Location:      8088/tcp
+CPE:           cpe:/a:nginx:nginx
+
+Concluded from version/product identification result:
+Server: nginx
+<hr><center>nginx</center>
+
+Concluded from version/product identification location:
+http://nova.uniautonoma.edu.co:8088/
+",1.3.6.1.4.1.25623.1.0.113787,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,43b86257-15b2-484a-89ab-418af53d2c66,"","","","","
+Details:
+nginx Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.113787)
+Version used: 2026-06-18T07:15:20Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,0.0,Log,80,"","OS Detection Consolidation and Reporting","This script consolidates the OS information detected by several
+  VTs and tries to find the best matching OS.
+
+  Furthermore it reports all previously collected information leading to this best matching OS. It
+  also reports possible additional information which might help to improve the OS detection.
+
+  If any of this information is wrong or could be improved please consider to report these to the
+  referenced community forum.","No Best matching OS identified. Please see the VT 'Unknown OS and Service Banner Reporting' (OID: 1.3.6.1.4.1.25623.1.0.108441) for possible ways to identify this OS.
+",1.3.6.1.4.1.25623.1.0.105937,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,ba665b73-0317-409e-bf7f-93eb2fe4f515,"","","","","
+Details:
+OS Detection Consolidation and Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.105937)
+Version used: 2026-11-06T05:39:10Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,0.0,Log,80,"","PHP Detection Consolidation","Consolidation of PHP detections.","Detected PHP
+
+Version:       unknown
+Location:      10443/tcp
+CPE:           cpe:/a:php:php
+
+Concluded from version/product identification result:
+PHPSESSID Session-Cookie
+",1.3.6.1.4.1.25623.1.0.171722,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,93b0a5be-26eb-4c4a-852e-9222244a6644,"","","","","
+Details:
+PHP Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.171722)
+Version used: 2025-09-24T05:39:03Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"","Response Time / No 404 Error Code Check","This VT tests if the remote web server does not reply with a 404
+  error code and checks if it is replying to the scanners requests in a reasonable amount of time.","The service is responding with a 200 HTTP status code to non-existent files/urls. The following pattern is used to work around possible false detections:
+-----
+NOVA | UniautÃ\x0083Â³noma del Cauca
+-----
+",1.3.6.1.4.1.25623.1.0.10386,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,fdbd90cd-ef0a-495a-a0ad-e2ff25f8da16,"","","","This web server might show the following issues:
+
+  - it is [mis]configured in that it does not return '404 Not Found' error codes when a non-existent
+  file is requested, perhaps returning a site map, search page, authentication page or redirect instead.
+
+  The Scanner might enabled some counter measures for that, however they might be insufficient. If a
+  great number of security issues are reported for this port, they might not all be accurate.
+
+  - it doesn't response in a reasonable amount of time to various HTTP requests sent by this VT.
+
+  In order to keep the scan total time to a reasonable amount, the remote web server might not be
+  tested. If the remote server should be tested it has to be fixed to have it reply to the scanners
+  requests in a reasonable amount of time.
+
+  Alternatively the 'Maximum response time (in seconds)' preference could be raised to a higher
+  value if longer scan times are accepted.","
+Details:
+Response Time / No 404 Error Code Check
+(OID: 1.3.6.1.4.1.25623.1.0.10386)
+Version used: 2025-04-11T15:45:04Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,8088,tcp,0.0,Log,80,"","Response Time / No 404 Error Code Check","This VT tests if the remote web server does not reply with a 404
+  error code and checks if it is replying to the scanners requests in a reasonable amount of time.","The host returns a 30x (e.g. 301) error code when a non-existent file is requested. Some HTTP-related checks have been disabled.
+",1.3.6.1.4.1.25623.1.0.10386,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,aec87c9b-b836-4f04-8495-85fe0bb64a7c,"","","","This web server might show the following issues:
+
+  - it is [mis]configured in that it does not return '404 Not Found' error codes when a non-existent
+  file is requested, perhaps returning a site map, search page, authentication page or redirect instead.
+
+  The Scanner might enabled some counter measures for that, however they might be insufficient. If a
+  great number of security issues are reported for this port, they might not all be accurate.
+
+  - it doesn't response in a reasonable amount of time to various HTTP requests sent by this VT.
+
+  In order to keep the scan total time to a reasonable amount, the remote web server might not be
+  tested. If the remote server should be tested it has to be fixed to have it reply to the scanners
+  requests in a reasonable amount of time.
+
+  Alternatively the 'Maximum response time (in seconds)' preference could be raised to a higher
+  value if longer scan times are accepted.","
+Details:
+Response Time / No 404 Error Code Check
+(OID: 1.3.6.1.4.1.25623.1.0.10386)
+Version used: 2025-04-11T15:45:04Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,80,tcp,0.0,Log,80,"","Response Time / No 404 Error Code Check","This VT tests if the remote web server does not reply with a 404
+  error code and checks if it is replying to the scanners requests in a reasonable amount of time.","The host returns a 30x (e.g. 301) error code when a non-existent file is requested. Some HTTP-related checks have been disabled.
+",1.3.6.1.4.1.25623.1.0.10386,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,d95a3a1f-53a6-4b02-8d39-37561a637c24,"","","","This web server might show the following issues:
+
+  - it is [mis]configured in that it does not return '404 Not Found' error codes when a non-existent
+  file is requested, perhaps returning a site map, search page, authentication page or redirect instead.
+
+  The Scanner might enabled some counter measures for that, however they might be insufficient. If a
+  great number of security issues are reported for this port, they might not all be accurate.
+
+  - it doesn't response in a reasonable amount of time to various HTTP requests sent by this VT.
+
+  In order to keep the scan total time to a reasonable amount, the remote web server might not be
+  tested. If the remote server should be tested it has to be fixed to have it reply to the scanners
+  requests in a reasonable amount of time.
+
+  Alternatively the 'Maximum response time (in seconds)' preference could be raised to a higher
+  value if longer scan times are accepted.","
+Details:
+Response Time / No 404 Error Code Check
+(OID: 1.3.6.1.4.1.25623.1.0.10386)
+Version used: 2025-04-11T15:45:04Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A TLScustom server answered on this port
+
+",1.3.6.1.4.1.25623.1.0.10330,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,acb5c894-b8f1-4854-917d-ee743d5c2132,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,8088,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A web server is running on this port
+",1.3.6.1.4.1.25623.1.0.10330,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,c04a748f-7938-4ad2-a053-76cfa058f05e,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,80,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A web server is running on this port
+",1.3.6.1.4.1.25623.1.0.10330,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,d4607b63-8571-44be-bd0d-9b2a3d61124e,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A TLScustom server answered on this port
+
+",1.3.6.1.4.1.25623.1.0.10330,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,908b4f46-7b82-4e81-ac80-2d7f7dae7f41,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A web server is running on this port through SSL/TLS
+",1.3.6.1.4.1.25623.1.0.10330,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,942e0da9-edfa-461d-a59c-c1b7c1ece9a4,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A web server is running on this port through SSL/TLS
+",1.3.6.1.4.1.25623.1.0.10330,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,8c5c0854-bafb-43c6-ac8c-5ecb96e9901e,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,5.0,Medium,99,"Mitigation","SSL/TLS: Certificate Expired","The remote server's SSL/TLS certificate has already expired.","The certificate of the remote service expired on 2026-09-12 23:59:59.
+
+Certificate details:
+fingerprint (SHA-1)             | 7736B11CC7AB79D06F1A6B1D36FF8D51C3A96A4B
+fingerprint (SHA-256)           | FE74DAFCB557D6A7BBAE9473104C606E6F78096802346D7F79DD3149C4AC8951
+issued by                       | CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1,O=DigiCert Inc,C=US
+public key algorithm            | RSA
+public key size (bits)          | 4096
+serial                          | 02BA5D1533077E1D375DB5FA12F66E77
+signature algorithm             | sha512WithRSAEncryption
+subject                         | CN=uniautonoma.edu.co,O=CORPORACIÃ\x0083Â\x0093N UNIVERSITARIA AUTÃ\x0083Â\x0093NOMA DEL CAUCA,L=Popayan,ST=Cauca,C=CO
+subject alternative names (SAN) | uniautonoma.edu.co, *.uniautonoma.edu.co
+valid from                      | 2025-08-12 00:00:00 UTC
+valid until                     | 2026-09-12 23:59:59 UTC
+",1.3.6.1.4.1.25623.1.0.103955,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,24bf70d0-482b-4870-aa07-688da86671cd,"","Replace the SSL/TLS certificate by a new one.","","This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.","
+Details:
+SSL/TLS: Certificate Expired
+(OID: 1.3.6.1.4.1.25623.1.0.103955)
+Version used: 2026-03-13T05:54:58Z
+","Product: cpe:/a:ietf:transport_layer_security
+Method: SSL/TLS: Collect and Report Certificate Details
+(OID: 1.3.6.1.4.1.25623.1.0.103692)
+","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,98,"","SSL/TLS: Collect and Report Certificate Details","This script collects and reports the details of all SSL/TLS
+  certificates.
+
+  This data will be used by other tests to verify server certificates.","The following certificate details of the remote service were collected.
+
+Certificate details:
+fingerprint (SHA-1)             | 7736B11CC7AB79D06F1A6B1D36FF8D51C3A96A4B
+fingerprint (SHA-256)           | FE74DAFCB557D6A7BBAE9473104C606E6F78096802346D7F79DD3149C4AC8951
+issued by                       | CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1,O=DigiCert Inc,C=US
+public key algorithm            | RSA
+public key size (bits)          | 4096
+serial                          | 02BA5D1533077E1D375DB5FA12F66E77
+signature algorithm             | sha512WithRSAEncryption
+subject                         | CN=uniautonoma.edu.co,O=CORPORACIÃ\x0083Â\x0093N UNIVERSITARIA AUTÃ\x0083Â\x0093NOMA DEL CAUCA,L=Popayan,ST=Cauca,C=CO
+subject alternative names (SAN) | uniautonoma.edu.co, *.uniautonoma.edu.co
+valid from                      | 2025-08-12 00:00:00 UTC
+valid until                     | 2026-09-12 23:59:59 UTC
+",1.3.6.1.4.1.25623.1.0.103692,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,e234950a-d8cc-48a3-b4e7-02114ffe7cec,"","","","","
+Details:
+SSL/TLS: Collect and Report Certificate Details
+(OID: 1.3.6.1.4.1.25623.1.0.103692)
+Version used: 2026-04-17T15:51:27Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,98,"","SSL/TLS: Collect and Report Certificate Details","This script collects and reports the details of all SSL/TLS
+  certificates.
+
+  This data will be used by other tests to verify server certificates.","The following certificate details of the remote service were collected.
+
+Certificate details:
+fingerprint (SHA-1)             | 9A23AE9A3254396DC2CE5E8BCBEA05F1AE6269A2
+fingerprint (SHA-256)           | 3CF1D7B90A7DEF0BEC32296ACA939E8A3DAEC8B9FFD6239DF3A4C04E22791CCD
+issued by                       | CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1,O=DigiCert Inc,C=US
+public key algorithm            | RSA
+public key size (bits)          | 2048
+serial                          | 0DCA7AC1F4C0653016E29CC0C647EF55
+signature algorithm             | sha256WithRSAEncryption
+subject                         | CN=uniautonoma.edu.co,O=CORPORACION UNIVERSITARIA AUTONOMA DEL CAUCA,L=Popayan,ST=Cauca,C=CO
+subject alternative names (SAN) | uniautonoma.edu.co, *.uniautonoma.edu.co
+valid from                      | 2026-09-08 00:00:00 UTC
+valid until                     | 2027-03-25 23:59:59 UTC
+",1.3.6.1.4.1.25623.1.0.103692,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,e971237c-4eca-4660-a64d-2fbca87c3617,"","","","","
+Details:
+SSL/TLS: Collect and Report Certificate Details
+(OID: 1.3.6.1.4.1.25623.1.0.103692)
+Version used: 2026-04-17T15:51:27Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,0.0,Log,98,"","SSL/TLS: Hostname discovery from server certificate","It was possible to discover an additional hostname
+  of this server from its certificate Common or Subject Alt Name.","The following additional and resolvable hostnames pointing to a different host ip were detected:
+
+uniautonoma.edu.co
+
+
+",1.3.6.1.4.1.25623.1.0.111010,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,c2fc1459-00e0-45ad-85c9-b58203d3b294,"","","","","
+Details:
+SSL/TLS: Hostname discovery from server certificate
+(OID: 1.3.6.1.4.1.25623.1.0.111010)
+Version used: 2021-11-22T15:32:39Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"Workaround","SSL/TLS: HTTP Public Key Pinning (HPKP) Missing","The remote web server is not enforcing HTTP Public Key Pinning
+  (HPKP).
+
+  Note: Most major browsers have dropped / deprecated support for this header in 2020.","The remote web server is not enforcing HPKP.
+
+HTTP-Banner:
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: ***replaced***
+Content-Type: text/html
+Content-Length: ***replaced***
+Connection: close
+Last-Modified: ***replaced***
+ETag: ""***replaced***""
+Expires: ***replaced***
+Cache-Control: max-age=0
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Accept-Ranges: bytes
+",1.3.6.1.4.1.25623.1.0.108247,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,cd10b90d-1a30-4811-8af7-6ae1a08f7721,"","Enable HPKP or add / configure the required directives
+  correctly following the guides linked in the references.
+
+  Note: Some web servers are not sending headers on specific status codes by default. Please review
+  your web server or application configuration to always send these headers on every response
+  independently from the status code.
+
+  - Apache: Use 'Header always set' instead of 'Header set'.
+
+  - nginx: Append the 'always' keyword to each 'add_header' directive.
+
+  For different applications or web servers please refer to the related documentation for a similar
+  configuration possibility.","","","
+Details:
+SSL/TLS: HTTP Public Key Pinning (HPKP) Missing
+(OID: 1.3.6.1.4.1.25623.1.0.108247)
+Version used: 2026-11-16T05:39:28Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"Workaround","SSL/TLS: HTTP Strict Transport Security (HSTS) Missing","The remote web server is not enforcing HTTP Strict Transport
+  Security (HSTS).","The remote web server is not enforcing HSTS.
+
+HTTP-Banner:
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: ***replaced***
+Content-Type: text/html
+Content-Length: ***replaced***
+Connection: close
+Last-Modified: ***replaced***
+ETag: ""***replaced***""
+Expires: ***replaced***
+Cache-Control: max-age=0
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Accept-Ranges: bytes
+",1.3.6.1.4.1.25623.1.0.105879,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,9a401839-fe7b-4874-9c98-bb01c7ab2b67,"","Enable HSTS or add / configure the required directives
+  correctly following the guides linked in the references.
+
+  Note: Some web servers are not sending headers on specific status codes by default. Please review
+  your web server or application configuration to always send these headers on every response
+  independently from the status code.
+
+  - Apache: Use 'Header always set' instead of 'Header set'.
+
+  - nginx: Append the 'always' keyword to each 'add_header' directive.
+
+  For different applications or web servers please refer to the related documentation for a similar
+  configuration possibility.","","","
+Details:
+SSL/TLS: HTTP Strict Transport Security (HSTS) Missing
+(OID: 1.3.6.1.4.1.25623.1.0.105879)
+Version used: 2026-11-16T05:39:28Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"","SSL/TLS: NPN / ALPN Extension and Protocol Support Detection","This routine identifies services supporting the following extensions to TLS:
+
+  - Application-Layer Protocol Negotiation (ALPN)
+
+  - Next Protocol Negotiation (NPN).
+
+  Based on the availability of this extensions the supported Network Protocols by this service are gathered and reported.","The remote service advertises support for the following Network Protocol(s) via the ALPN extension:
+
+SSL/TLS Protocol:Network Protocol
+TLSv1.2:HTTP/1.1
+TLSv1.2:HTTP/2
+
+",1.3.6.1.4.1.25623.1.0.108099,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,3703016e-27fc-4525-9043-13a1e75a51e4,"","","","","
+Details:
+SSL/TLS: NPN / ALPN Extension and Protocol Support Detection
+(OID: 1.3.6.1.4.1.25623.1.0.108099)
+Version used: 2024-09-27T05:05:23Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,80,"","SSL/TLS: NPN / ALPN Extension and Protocol Support Detection","This routine identifies services supporting the following extensions to TLS:
+
+  - Application-Layer Protocol Negotiation (ALPN)
+
+  - Next Protocol Negotiation (NPN).
+
+  Based on the availability of this extensions the supported Network Protocols by this service are gathered and reported.","The remote service advertises support for the following Network Protocol(s) via the ALPN extension:
+
+SSL/TLS Protocol:Network Protocol
+TLSv1.2:HTTP/1.1
+TLSv1.2:HTTP/2
+
+",1.3.6.1.4.1.25623.1.0.108099,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,af1a5d92-8264-4808-9e1f-82bc509724f4,"","","","","
+Details:
+SSL/TLS: NPN / ALPN Extension and Protocol Support Detection
+(OID: 1.3.6.1.4.1.25623.1.0.108099)
+Version used: 2024-09-27T05:05:23Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,98,"","SSL/TLS: Report Medium Cipher Suites","This routine reports all Medium SSL/TLS cipher suites accepted
+  by a service.","'Medium' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+
+'Medium' cipher suites accepted by this service via the TLSv1.3 protocol:
+
+TLS_AES_128_GCM_SHA256
+
+
+",1.3.6.1.4.1.25623.1.0.902816,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,e9235f8d-1b80-4404-aec2-24be11c85737,"","","","Any cipher suite considered to be secure for only the next 10
+  years is considered as medium.","
+Details:
+SSL/TLS: Report Medium Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.902816)
+Version used: 2024-09-27T05:05:23Z
+","Product: cpe:/a:ietf:transport_layer_security
+Method: SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,98,"","SSL/TLS: Report Medium Cipher Suites","This routine reports all Medium SSL/TLS cipher suites accepted
+  by a service.","'Medium' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384
+
+'Medium' cipher suites accepted by this service via the TLSv1.3 protocol:
+
+TLS_AES_128_GCM_SHA256
+
+
+",1.3.6.1.4.1.25623.1.0.902816,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,17ef2e20-1c9f-4240-9d62-0a68ceb062ab,"","","","Any cipher suite considered to be secure for only the next 10
+  years is considered as medium.","
+Details:
+SSL/TLS: Report Medium Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.902816)
+Version used: 2024-09-27T05:05:23Z
+","Product: cpe:/a:ietf:transport_layer_security
+Method: SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,98,"","SSL/TLS: Report Non Weak Cipher Suites","This routine reports all Non Weak SSL/TLS cipher suites
+  accepted by a service.","'Non Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+
+'Non Weak' cipher suites accepted by this service via the TLSv1.3 protocol:
+
+TLS_AES_128_GCM_SHA256
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+
+
+",1.3.6.1.4.1.25623.1.0.103441,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,5a33808a-9d3a-4a6c-a105-8db89326d420,"","","","","
+Details:
+SSL/TLS: Report Non Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103441)
+Version used: 2024-09-27T05:05:23Z
+","Product: cpe:/a:ietf:transport_layer_security
+Method: SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,98,"","SSL/TLS: Report Non Weak Cipher Suites","This routine reports all Non Weak SSL/TLS cipher suites
+  accepted by a service.","'Non Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+
+'Non Weak' cipher suites accepted by this service via the TLSv1.3 protocol:
+
+TLS_AES_128_GCM_SHA256
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+
+
+",1.3.6.1.4.1.25623.1.0.103441,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,e434d224-a148-48d5-bcd7-a36684011248,"","","","","
+Details:
+SSL/TLS: Report Non Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103441)
+Version used: 2024-09-27T05:05:23Z
+","Product: cpe:/a:ietf:transport_layer_security
+Method: SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,98,"","SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites","This routine reports all SSL/TLS cipher suites accepted by a
+  service which are supporting Perfect Forward Secrecy (PFS).","Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this service via the TLSv1.2 protocol:
+
+TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+
+Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this service via the TLSv1.3 protocol:
+
+TLS_AES_128_GCM_SHA256
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+
+
+",1.3.6.1.4.1.25623.1.0.105018,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,95d1f813-3b68-4e1e-91c8-5aadf8f45024,"","","","","
+Details:
+SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.105018)
+Version used: 2026-03-13T05:54:58Z
+","Product: cpe:/a:ietf:transport_layer_security
+Method: SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,98,"","SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites","This routine reports all SSL/TLS cipher suites accepted by a
+  service which are supporting Perfect Forward Secrecy (PFS).","Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+
+Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this service via the TLSv1.3 protocol:
+
+TLS_AES_128_GCM_SHA256
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+
+
+",1.3.6.1.4.1.25623.1.0.105018,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,97133d06-3eaf-471c-913f-86354fdad393,"","","","","
+Details:
+SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.105018)
+Version used: 2026-03-13T05:54:58Z
+","Product: cpe:/a:ietf:transport_layer_security
+Method: SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,98,"","SSL/TLS: Report Supported Cipher Suites","This routine reports all SSL/TLS cipher suites accepted by a
+  service.","'Strong' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+KEX groups: secp256r1 (NIST P-256), secp384r1 (NIST P-384), secp521r1 (NIST P-521), x25519, x448
+
+TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+
+'Medium' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+
+No 'Weak' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+No 'Null' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+'Strong' cipher suites accepted by this service via the TLSv1.3 protocol:
+
+KEX groups: secp256r1 (NIST P-256), secp384r1 (NIST P-384), secp521r1 (NIST P-521), x25519, x448
+
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+
+'Medium' cipher suites accepted by this service via the TLSv1.3 protocol:
+
+TLS_AES_128_GCM_SHA256
+
+No 'Weak' cipher suites accepted by this service via the TLSv1.3 protocol.
+
+No 'Null' cipher suites accepted by this service via the TLSv1.3 protocol.
+
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.3 protocol.
+
+Server Key Exchange Group(s):
+TLSv1.3  128 bits  secp256r1 (NIST P-256)
+TLSv1.3  192 bits  secp384r1 (NIST P-384)
+TLSv1.3  256 bits  secp521r1 (NIST P-521)
+TLSv1.3  128 bits  x25519
+TLSv1.3  224 bits  x448
+TLSv1.2  128 bits  secp256r1 (NIST P-256)
+TLSv1.2  192 bits  secp384r1 (NIST P-384)
+TLSv1.2  256 bits  secp521r1 (NIST P-521)
+TLSv1.2  128 bits  x25519
+TLSv1.2  224 bits  x448
+
+
+",1.3.6.1.4.1.25623.1.0.802067,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,cbda7733-ddbb-4abd-9cee-6473d0459ea5,"","","","Notes:
+
+  - As the VT 'SSL/TLS: Check Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.900234) might run
+  into a timeout the actual reporting of all accepted cipher suites takes place in this VT instead.
+
+  - SSLv2 ciphers are not getting reported as the protocol itself is deprecated, needs to be
+  considered as weak and is reported separately as deprecated.","
+Details:
+SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+Version used: 2026-03-13T05:54:58Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,98,"","SSL/TLS: Report Supported Cipher Suites","This routine reports all SSL/TLS cipher suites accepted by a
+  service.","'Strong' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+KEX groups: secp256r1 (NIST P-256), secp384r1 (NIST P-384), secp521r1 (NIST P-521), x25519, x448
+
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+
+'Medium' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384
+
+No 'Weak' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+No 'Null' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+'Strong' cipher suites accepted by this service via the TLSv1.3 protocol:
+
+KEX groups: secp256r1 (NIST P-256), secp384r1 (NIST P-384), secp521r1 (NIST P-521), x25519, x448
+
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+
+'Medium' cipher suites accepted by this service via the TLSv1.3 protocol:
+
+TLS_AES_128_GCM_SHA256
+
+No 'Weak' cipher suites accepted by this service via the TLSv1.3 protocol.
+
+No 'Null' cipher suites accepted by this service via the TLSv1.3 protocol.
+
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.3 protocol.
+
+Server Key Exchange Group(s):
+TLSv1.3  128 bits  secp256r1 (NIST P-256)
+TLSv1.3  192 bits  secp384r1 (NIST P-384)
+TLSv1.3  256 bits  secp521r1 (NIST P-521)
+TLSv1.3  128 bits  x25519
+TLSv1.3  224 bits  x448
+TLSv1.2  128 bits  secp256r1 (NIST P-256)
+TLSv1.2  192 bits  secp384r1 (NIST P-384)
+TLSv1.2  256 bits  secp521r1 (NIST P-521)
+TLSv1.2  128 bits  x25519
+TLSv1.2  224 bits  x448
+
+
+",1.3.6.1.4.1.25623.1.0.802067,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,4e2634f7-1e8d-4c32-8110-32d91a868d8c,"","","","Notes:
+
+  - As the VT 'SSL/TLS: Check Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.900234) might run
+  into a timeout the actual reporting of all accepted cipher suites takes place in this VT instead.
+
+  - SSLv2 ciphers are not getting reported as the protocol itself is deprecated, needs to be
+  considered as weak and is reported separately as deprecated.","
+Details:
+SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+Version used: 2026-03-13T05:54:58Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,98,"","SSL/TLS: Safe/Secure Renegotiation Support Status","Checks and reports if a remote SSL/TLS service supports
+  safe/secure renegotiation.","Protocol Version | Safe/Secure Renegotiation Support Status
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SSLv3            | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.0          | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.1          | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.2          | Enabled, Note: While the remote service announces the support of safe/secure renegotiation it still might not support / accept renegotiation at all.
+TLSv1.3          | Disabled (The TLSv1.3 protocol generally doesn't support renegotiation so this is always reported as 'Disabled')
+",1.3.6.1.4.1.25623.1.0.117757,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,22f05565-c41c-41cc-9f86-bc7b557b69f8,"","","","","
+Details:
+SSL/TLS: Safe/Secure Renegotiation Support Status
+(OID: 1.3.6.1.4.1.25623.1.0.117757)
+Version used: 2026-03-13T05:54:58Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,98,"","SSL/TLS: Safe/Secure Renegotiation Support Status","Checks and reports if a remote SSL/TLS service supports
+  safe/secure renegotiation.","Protocol Version | Safe/Secure Renegotiation Support Status
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SSLv3            | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.0          | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.1          | Unknown, Reason: Scanner failed to negotiate an SSL/TLS connection (Either the scanner or the remote host is probably not supporting / accepting this SSL/TLS protocol version).
+TLSv1.2          | Enabled, Note: While the remote service announces the support of safe/secure renegotiation it still might not support / accept renegotiation at all.
+TLSv1.3          | Disabled (The TLSv1.3 protocol generally doesn't support renegotiation so this is always reported as 'Disabled')
+",1.3.6.1.4.1.25623.1.0.117757,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,c894d29c-7030-4133-ba16-cb7e0b59e993,"","","","","
+Details:
+SSL/TLS: Safe/Secure Renegotiation Support Status
+(OID: 1.3.6.1.4.1.25623.1.0.117757)
+Version used: 2026-03-13T05:54:58Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,98,"","SSL/TLS: Untrusted Certificate Detection","Checks and reports if a remote SSL/TLS service is using a
+  certificate which is untrusted / the verification against the system wide trust store has failed.","The remote SSL/TLS server is using the following certificate(s) which failed the verification against the system wide trust store (serial:issuer):
+
+02BA5D1533077E1D375DB5FA12F66E77:CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1,O=DigiCert Inc,C=US (Server certificate)
+0CF5BD062B5602F47AB8502C23CCF066:CN=DigiCert Global Root G2,OU=www.digicert.com,O=DigiCert Inc,C=US (Certificate in chain)
+033AF1E6A711A9A0BB2864B11D09FAE5:CN=DigiCert Global Root G2,OU=www.digicert.com,O=DigiCert Inc,C=US (Certificate in chain)
+",1.3.6.1.4.1.25623.1.0.117764,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,f8160fb1-f5fb-4d94-a815-540a5aa12082,"","","","","
+Details:
+SSL/TLS: Untrusted Certificate Detection
+(OID: 1.3.6.1.4.1.25623.1.0.117764)
+Version used: 2026-03-13T05:54:58Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"","SSL/TLS: Version Detection","Enumeration and reporting of SSL/TLS protocol versions supported
+  by a remote service.","The remote SSL/TLS service supports the following SSL/TLS protocol version(s):
+
+TLSv1.2
+TLSv1.3
+",1.3.6.1.4.1.25623.1.0.105782,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,1a5134d1-1f86-4572-bd3f-424070bd801a,"","","","","Sends multiple SSL/TLS client hello messages to the remote
+  service and attempts to determine the SSL/TLS protocol versions supported by the service from the
+  received SSL/TLS server hello message.
+
+  Notes:
+
+  - The supported SSL/TLS protocol versions included in the report of this VT are reported
+  independently from the allowed / supported SSL/TLS ciphers.
+
+  - Additional debug logging can be enabled by setting the preferences 'Log verbosity' to 'Debug'
+  and 'Debug level' to '1' within the VT 'Global variable settings'
+  (OID: 1.3.6.1.4.1.25623.1.0.12288). The relevant logs will end up in the scanner log file.
+Details:
+SSL/TLS: Version Detection
+(OID: 1.3.6.1.4.1.25623.1.0.105782)
+Version used: 2026-05-22T06:54:41Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,80,"","SSL/TLS: Version Detection","Enumeration and reporting of SSL/TLS protocol versions supported
+  by a remote service.","The remote SSL/TLS service supports the following SSL/TLS protocol version(s):
+
+TLSv1.2
+TLSv1.3
+",1.3.6.1.4.1.25623.1.0.105782,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,81e49d83-4d39-4888-b3ae-841fb65088b2,"","","","","Sends multiple SSL/TLS client hello messages to the remote
+  service and attempts to determine the SSL/TLS protocol versions supported by the service from the
+  received SSL/TLS server hello message.
+
+  Notes:
+
+  - The supported SSL/TLS protocol versions included in the report of this VT are reported
+  independently from the allowed / supported SSL/TLS ciphers.
+
+  - Additional debug logging can be enabled by setting the preferences 'Log verbosity' to 'Debug'
+  and 'Debug level' to '1' within the VT 'Global variable settings'
+  (OID: 1.3.6.1.4.1.25623.1.0.12288). The relevant logs will end up in the scanner log file.
+Details:
+SSL/TLS: Version Detection
+(OID: 1.3.6.1.4.1.25623.1.0.105782)
+Version used: 2026-05-22T06:54:41Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 89913031
+Packet 2: 89915108
+",1.3.6.1.4.1.25623.1.0.80091,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,eb947cf1-689a-44de-9539-90920fd5748e,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,,,0.0,Log,80,"","Traceroute","Collect information about the network route and
+  network distance between the scanner host and the target host.","Network route from scanner (172.18.0.13) to target (179.1.113.103):
+
+172.18.0.13
+179.1.113.103
+
+Network distance between scanner and target: 2
+",1.3.6.1.4.1.25623.1.0.51662,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,83daf3e7-b701-4556-ad1b-b1f2586b83db,"","","","For internal networks, the distances are usually
+  small, often less than 4 hosts between scanner and target. For public targets the
+  distance is greater and might be 10 hosts or more.","A combination of the protocols ICMP and TCP is used
+  to determine the route. This method is applicable for IPv4 only and it is also known as
+  'traceroute'.
+Details:
+Traceroute
+(OID: 1.3.6.1.4.1.25623.1.0.51662)
+Version used: 2022-10-17T11:13:19Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,0.0,Log,80,"","Web Application Scanning Consolidation / Info Reporting","The script consolidates and reports various information for web
+  application (formerly called 'CGI') scanning.
+
+  This information is based on the following scripts / settings:
+
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)
+
+  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use
+
+  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+  'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+  'Global variable settings' of the scan config in use
+
+  If you think any of this information is wrong please report it to the referenced community
+  forum.","The Hostname/IP ""nova.uniautonoma.edu.co"" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the ""Enable generic web application scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be NOT able to host ASP scripts.
+
+The User-Agent ""Mozilla/5.0 [en] (X11, U; OpenVAS-VT <version replaced>)"" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for web application scanning. You can enable this again with the ""Add historic /scripts and /cgi-bin to directories for CGI scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The following directories were used for web application scanning:
+
+https://nova.uniautonoma.edu.co:10443/
+https://nova.uniautonoma.edu.co:10443/.cobalt
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+
+The following directories were excluded from web application scanning because the ""Regex pattern to exclude directories from CGI scanning"" setting of the VT ""Global variable settings"" (OID: 1.3.6.1.4.1.25623.1.0.12288) for this scan was: ""/(index\.php|image|img|css|js$|js/|javascript|style|theme|icon|jquery|graphic|grafik|picture|bilder|thumbnail|media/|skins?/)""
+
+https://nova.uniautonoma.edu.co:10443/index.php/wp-json/batch
+https://nova.uniautonoma.edu.co:10443/ui/js
+https://nova.uniautonoma.edu.co:10443/ui/themes/opnsense/build/css
+https://nova.uniautonoma.edu.co:10443/ui/themes/opnsense/build/images
+
+The following CGIs were discovered:
+
+Syntax : cginame (arguments [default value])
+
+https://nova.uniautonoma.edu.co:10443/ (url [/.cobalt] )
+https://nova.uniautonoma.edu.co:10443/ui/themes/opnsense/build/images/favicon.png (v [e3e9913d9a48e320] )
+
+The following cgi scripts were excluded from web application scanning because of the ""Regex pattern to exclude cgi scripts"" setting of the VT ""Web mirroring"" (OID: 1.3.6.1.4.1.25623.1.0.10662) for this scan was: ""\.(js|css)$""
+
+Syntax : cginame (arguments [default value])
+
+https://nova.uniautonoma.edu.co:10443/ui/themes/opnsense/build/css/main.css (v [e3e9913d9a48e320] )
+",1.3.6.1.4.1.25623.1.0.111038,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,21fc31c0-23ea-46df-82e7-053102dc87db,"","","","","
+Details:
+Web Application Scanning Consolidation / Info Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.111038)
+Version used: 2026-02-24T05:57:09Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,8088,tcp,0.0,Log,80,"","Web Application Scanning Consolidation / Info Reporting","The script consolidates and reports various information for web
+  application (formerly called 'CGI') scanning.
+
+  This information is based on the following scripts / settings:
+
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)
+
+  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use
+
+  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+  'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+  'Global variable settings' of the scan config in use
+
+  If you think any of this information is wrong please report it to the referenced community
+  forum.","The Hostname/IP ""nova.uniautonoma.edu.co"" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the ""Enable generic web application scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be able to host ASP scripts.
+
+The User-Agent ""Mozilla/5.0 [en] (X11, U; OpenVAS-VT <version replaced>)"" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for web application scanning. You can enable this again with the ""Add historic /scripts and /cgi-bin to directories for CGI scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The following directories were used for web application scanning:
+
+http://nova.uniautonoma.edu.co:8088/
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+",1.3.6.1.4.1.25623.1.0.111038,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,e859302b-016f-49fd-8170-25b89bd03b91,"","","","","
+Details:
+Web Application Scanning Consolidation / Info Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.111038)
+Version used: 2026-02-24T05:57:09Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,80,tcp,0.0,Log,80,"","Web Application Scanning Consolidation / Info Reporting","The script consolidates and reports various information for web
+  application (formerly called 'CGI') scanning.
+
+  This information is based on the following scripts / settings:
+
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)
+
+  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use
+
+  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+  'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+  'Global variable settings' of the scan config in use
+
+  If you think any of this information is wrong please report it to the referenced community
+  forum.","The Hostname/IP ""nova.uniautonoma.edu.co"" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the ""Enable generic web application scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be able to host ASP scripts.
+
+The User-Agent ""Mozilla/5.0 [en] (X11, U; OpenVAS-VT <version replaced>)"" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for web application scanning. You can enable this again with the ""Add historic /scripts and /cgi-bin to directories for CGI scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The following directories were used for web application scanning:
+
+http://nova.uniautonoma.edu.co/
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+",1.3.6.1.4.1.25623.1.0.111038,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,1606d578-3e1b-4b73-b700-dfe9a332d899,"","","","","
+Details:
+Web Application Scanning Consolidation / Info Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.111038)
+Version used: 2026-02-24T05:57:09Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,443,tcp,0.0,Log,80,"","Web Application Scanning Consolidation / Info Reporting","The script consolidates and reports various information for web
+  application (formerly called 'CGI') scanning.
+
+  This information is based on the following scripts / settings:
+
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)
+
+  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use
+
+  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+  'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+  'Global variable settings' of the scan config in use
+
+  If you think any of this information is wrong please report it to the referenced community
+  forum.","The Hostname/IP ""nova.uniautonoma.edu.co"" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the ""Enable generic web application scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The service is responding with a 200 HTTP status code to non-existent files/urls. The following pattern is used to work around possible false detections:
+-----
+NOVA | UniautÃ\x0083Â³noma del Cauca
+-----
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be able to host ASP scripts.
+
+The User-Agent ""Mozilla/5.0 [en] (X11, U; OpenVAS-VT <version replaced>)"" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for web application scanning. You can enable this again with the ""Add historic /scripts and /cgi-bin to directories for CGI scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The following directories were used for web application scanning:
+
+https://nova.uniautonoma.edu.co/
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+",1.3.6.1.4.1.25623.1.0.111038,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,ca80f2fb-d5f6-44f8-a036-77940be2edd4,"","","","","
+Details:
+Web Application Scanning Consolidation / Info Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.111038)
+Version used: 2026-02-24T05:57:09Z
+","","","",""
+179.1.113.103,nova.uniautonoma.edu.co,10443,tcp,4.3,Medium,70,"Mitigation","Web Proxy Auto-Discovery Protocol Information Disclosure Vulnerability (badWPAD, HTTP) - Active Check","The Web Proxy Auto-Discovery Protocol (WPAD) is a method used
+  by clients to locate the URL of a configuration file using DHCP and/or DNS discovery methods.
+  Once detection and download of the configuration file is complete, it can be executed to
+  determine the proxy for a specified URL.
+
+  There are known security issues with WPAD.","Vulnerable URL: https://nova.uniautonoma.edu.co:10443/wpad.dat
+",1.3.6.1.4.1.25623.1.0.105845,"",0cf97d85-1a8f-46b6-a09c-6df2c9d8db6a,"Escaneo-Nova-Aspirante-20261117",2026-11-17T05:29:56Z,441befaa-ae56-40b8-995b-03d2e283f1bd,"","Apply the mentioned steps in the referenced advisory to
+  mitigate the issue.","","","
+Details:
+Web Proxy Auto-Discovery Protocol Information Disclosure Vulnerability (badW...
+(OID: 1.3.6.1.4.1.25623.1.0.105845)
+Version used: 2026-10-08T05:49:09Z
+","","","",""
